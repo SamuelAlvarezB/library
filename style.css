@@ -7,14 +7,50 @@
 .add-book {
     padding: 1rem;
     margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.first-column{
+    display: grid;
+    gap: 0.5rem;
+}
+
+.second-column{
+    display: grid;
+    grid-template-rows: 0.1fr;
+    gap: 0.5rem;
+}
+
+.third-column{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+#addButton{
+    grid-row: 3/5;
 }
 
 .library {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
+    background-color: antiquewhite;
 }
 
 .book-card {
-    background-color: azure;
+    background-color: darksalmon;
+    padding: 0.5rem;
+}
+
+.book-read {
+    background-color: aquamarine;
+}
+
+.deleteButton{
+    display: flex;
+    justify-self: end;
 }
